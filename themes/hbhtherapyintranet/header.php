@@ -89,7 +89,7 @@
                     <a class="phone" href="tel:<?php the_field( 'header_phone_number_link', 'option' ); ?>"><?php the_field( 'header_phone_number', 'option' ); ?></a>
 
                     <div class="site-menu" href="javascript:void(0);"  onclick="navToggle()">
-                        <p class="menu-label">menu</p>
+                        <p class="menu-label">menu test</p>
                         <nav id="myNav" class="main-navigation">
                             <a class="menu-btn" >
                                 <div class="hamburger">
