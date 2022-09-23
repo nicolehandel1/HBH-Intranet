@@ -913,7 +913,7 @@ a.btn {
     position: fixed;
     top: auto;
     align-items: center;
-    background: #fff;
+    background: #334954;
     display: flex;
     height: 5.5rem;
     transition: box-shadow .7s cubic-bezier(.19, 1, .4, 1);
@@ -974,11 +974,6 @@ a.btn {
     background-position: center;
 }
 
-.menu {
-    width: 70%;
-    padding: 15px;
-}
-
 #menu-content {
     opacity: 0;
     transition: .3s ease;
@@ -1012,66 +1007,6 @@ a.btn {
     background-color: #008587;
 }
 
-.one-active {
-    background-color: #F4CC9D;
-    transform: translateY(13px) rotate(45deg);
-}
-
-.two-active {
-    background-color: #F4CC9D;
-    display: none;
-}
-
-.three-active {
-    background-color: #F4CC9D;
-    transform: translateY(-9px) rotate(135deg);
-}
-
-.hbhmenu {}
-
-.hbhmenu ul {
-    list-style: none;
-    margin: 65px 0 0 0;
-}
-
-.hbhmenu li {
-    margin-bottom: 2em;
-    font-family: acumin-pro, sans-serif;
-    font-weight: 800;
-    font-style: normal;
-    font-size: 1.5em;
-    text-align: left;
-}
-
-.hbhmenu a {
-    color: #F4CC9D;
-    box-shadow: -1px 2px 5px -2px #008587;
-    -webkit-box-shadow: -1px 2px 5px -2px #008587;
-    -moz-box-shadow: -1px 2px 5px -2px #008587;
-    text-decoration: none;
-}
-
-.hbhmenu a:hover {
-    color: #fff !important;
-}
-
-.hbhmenu a:visited {
-    color: #F4CC9D;
-}
-
-.hbhmenu ul ul {
-    display: none;
-}
-
-.hbhmenu ul li:hover > ul {
-    display: block;
-}
-
-.sub-menu li {
-    font-size: .85em;
-    margin-top: -1.5em;
-    margin-left: 10px;
-}
 
 .invisible {
     font-size: 0px;
@@ -1101,11 +1036,6 @@ a.btn {
         letter-spacing: 0;
         font-size: 14px;
     }
-
-    .menu {
-        width: 100%;
-    }
-
     .menu-label {
         display: none;
     }
@@ -1154,6 +1084,7 @@ a.btn {
 
 .main-navigation li {
     position: relative;
+    padding: 10px;
 }
 
 .main-navigation a {

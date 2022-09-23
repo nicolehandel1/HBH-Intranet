@@ -88,35 +88,8 @@
 
                     <a class="phone" href="tel:<?php the_field( 'header_phone_number_link', 'option' ); ?>"><?php the_field( 'header_phone_number', 'option' ); ?></a>
 
-                    <div class="site-menu" href="javascript:void(0);"  onclick="navToggle()">
-                        <p class="menu-label">menu test</p>
+                    <div class="site-menu">
                         <nav id="myNav" class="main-navigation">
-                            <a class="menu-btn" >
-                                <div class="hamburger">
-                                    <div class="nav-bar one"></div>
-                                    <div class="nav-bar two"></div>
-                                    <div class="nav-bar three"></div>
-                                </div>
-                            </a>
-                            <!-- Button to close the overlay navigation -->
-                        </nav><!-- #site-navigation -->
-                    </div>
-                </div>
-            </div>
-
-            <!-- Overlay content -->
-            <div class="menu-right">
-            <div class="menu-section-wrap" id="menu">
-                <div class="menu-content" style="background-image: url(<?php the_field( 'main_menu_image', 'option' ); ?>)";>
-                    <div class="menu" id="menu-content">
-                        <a href="javascript:void(0);" class="menu-btn" onclick="navToggle()">
-                                <div class="hamburger">
-                                    <div class="nav-bar one-active"></div>
-                                    <div class="nav-bar two-active"></div>
-                                    <div class="nav-bar three-active"></div>
-                                </div>
-                            </a>
-                        <div class="hbhmenu">
                             <?php
                         wp_nav_menu(
                             array(
@@ -125,10 +98,10 @@
                             )
                         );
                     ?>
-                        </div>
+                            <!-- Button to close the overlay navigation -->
+                        </nav><!-- #site-navigation -->
                     </div>
                 </div>
             </div>
-                </div>
 
         </header><!-- #masthead -->
