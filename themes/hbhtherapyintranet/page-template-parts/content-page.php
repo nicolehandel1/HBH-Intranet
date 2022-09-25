@@ -29,8 +29,6 @@ h2 {
         
         <div class="default-content">
             
-            <h1 class="blog-title office-title">Events</h1>
-            
             <div class="entry-content"><?php the_content(); ?></div>
             
         </div>

@@ -911,6 +911,188 @@ a.btn {
 /* Header/Navigation
 --------------------------------------------- */
 
+.site-header {
+    width: 100%;
+}
+    
+.subnav-wrap {
+    width: 100%;
+    background: #334954;
+    }
+    
+.nav-wrap {
+    width: 100%;
+    background: #f5efe9;
+    padding-top: 20px;
+    }
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    max-width: 1680px;
+    margin: 0 auto;
+    padding: 10px 16px;
+}
+    
+.main-site-branding {
+    display: flex;
+    height: 2rem;     
+} 
+    
+.subhead-logo:hover {
+    opacity: .5;    
+}    
+    
+.hd-social {
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}   
+    
+a.hdsocial {
+    padding-left: 15px;
+    color: #008587;
+}
+    
+a.hdsocial {
+    padding-left: 20px;
+    color: #7BBEB6;
+}
+    
+span {
+    color: #7BBEB6;
+}    
+
+.site-branding {
+    display: flex;
+    align-items: baseline;
+    height: 5.5rem; 
+    color: #008587; 
+}
+
+.site-menu {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.caret {
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+.nav-container a.phone {
+    margin-bottom: 0px;
+    margin-right: 83px;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .nav-container {
+        height: 3.5rem;
+    }
+
+    .nav-container a.phone {
+        margin: 0px 50px;
+        letter-spacing: 0;
+        font-size: 14px;
+    }
+    .menu-label {
+        display: none;
+    }
+}
+
+.main-navigation {
+    display: block;
+    width: 100%;
+}
+
+.main-navigation ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.main-navigation ul ul {
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    float: left;
+    position: absolute;
+    top: 100%;
+    left: -999em;
+    z-index: 99999;
+}
+
+.main-navigation ul ul ul {
+    left: -999em;
+    top: 0;
+}
+
+.main-navigation ul ul li:hover > ul,
+.main-navigation ul ul li.focus > ul {
+    display: block;
+    left: auto;
+}
+
+.main-navigation ul ul a {
+    width: 200px;
+}
+
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+    left: auto;
+}
+
+.main-navigation li {
+    position: relative;
+    padding: 0 10px;
+    font-size: 22px;
+}
+
+.main-navigation a {
+    display: block;
+    color: #008587;
+    text-decoration: none;
+}  
+    
+.main-navigation a:visited {
+    color: #008587;
+}
+    
+.main-navigation a:hover {
+    color: #F7931E;
+}      
+    
+.main-navigation .current_page_item a, .main-navigation .current-menu-item a {
+    color: #F7931E;
+}     
+
+.site-main .comment-navigation,
+.site-main .posts-navigation,
+.site-main .post-navigation {
+    margin: 0 0 1.5em;
+}
+
+.comment-navigation .nav-links,
+.posts-navigation .nav-links,
+.post-navigation .nav-links {
+    display: flex;
+}
+
+.comment-navigation .nav-previous,
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous {
+    flex: 1 0 50%;
+}
+
+.comment-navigation .nav-next,
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+    text-align: end;
+    flex: 1 0 50%;
+}
+
 
 /* Footer
 --------------------------------------------- */
@@ -919,6 +1101,10 @@ a.btn {
     .site-info {
         background-color: #334954;
         width: 100%;
+    }
+
+    .site-footer {
+        background: #fff;
     }
 
     .footer-section {
@@ -955,10 +1141,18 @@ a.btn {
     .ft-location {
         margin-bottom: 25px;
     }
-    
+
+    .ft-info a:visited {
+        color: #4D4D4D
+    }
+
+    .ft-info a:hover {
+        color: #F7931E;
+    }
+
     .ftinfo {
         display: flex;
-        flex-wrap:wrap;
+        flex-wrap: wrap;
         align-items: flex-end;
         padding-left: 50px;
     }
@@ -969,23 +1163,19 @@ a.btn {
     }
 
     .footer-content h4 {
-        color: #7BBEB6;
+        color: #008587;
         font-weight: 800;
         margin: 0 0 5px 0;
     }
     
-    .ft-titlink:hover {
-        color: #fff;
-    }
-    
     .ftphone {
         display: block;
-        color: #FAF8F4;
+        color: #4D4D4D;
     }
     
     .ftaddress {
         margin-top: 5px;
-        color: #FAF8F4;
+        color: #4D4D4D;
     }
     
     .ft-social {

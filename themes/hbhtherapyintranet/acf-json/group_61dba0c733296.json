@@ -225,27 +225,6 @@
                     "maxlength": ""
                 },
                 {
-                    "key": "field_62621b750ee7e",
-                    "label": "Page Link",
-                    "name": "location_page_link",
-                    "type": "page_link",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "post_type": [
-                        "page"
-                    ],
-                    "taxonomy": "",
-                    "allow_null": 0,
-                    "allow_archives": 1,
-                    "multiple": 0
-                },
-                {
                     "key": "field_62621c19a8e18",
                     "label": "Phone Label",
                     "name": "phone_label",
@@ -357,10 +336,10 @@
             "maxlength": ""
         },
         {
-            "key": "field_6300e278b94df",
+            "key": "field_632f9cd99bfcc",
             "label": "Store Link",
             "name": "store_link",
-            "type": "text",
+            "type": "url",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -370,10 +349,7 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "placeholder": ""
         },
         {
             "key": "field_62621df0a10bc",
@@ -434,64 +410,6 @@
             "key": "field_62621e46a10bf",
             "label": "Contact Email",
             "name": "contact_email",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_62621ea7e9f04",
-            "label": "Careers",
-            "name": "",
-            "type": "message",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "",
-            "new_lines": "wpautop",
-            "esc_html": 0
-        },
-        {
-            "key": "field_62621eb2e9f05",
-            "label": "Career Page Link",
-            "name": "career_page_link",
-            "type": "page_link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "post_type": [
-                "page",
-                "post"
-            ],
-            "taxonomy": "",
-            "allow_null": 0,
-            "allow_archives": 1,
-            "multiple": 0
-        },
-        {
-            "key": "field_62621ec7e9f06",
-            "label": "Careers Email",
-            "name": "careers_email",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -598,31 +516,9 @@
         },
         {
             "key": "field_626225eb5ee72",
-            "label": "Privacy Page Link",
+            "label": "Website",
             "name": "privacy_page_link",
-            "type": "page_link",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "post_type": [
-                "page",
-                "post"
-            ],
-            "taxonomy": "",
-            "allow_null": 0,
-            "allow_archives": 1,
-            "multiple": 0
-        },
-        {
-            "key": "field_626225fd5ee73",
-            "label": "Sitemap Link",
-            "name": "sitemap_link",
-            "type": "text",
+            "type": "url",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -632,10 +528,7 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            "placeholder": ""
         },
         {
             "key": "field_626226145ee74",
@@ -675,5 +568,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1664057670
+    "modified": 1664064815
 }
