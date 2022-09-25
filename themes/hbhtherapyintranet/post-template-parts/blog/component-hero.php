@@ -8,7 +8,7 @@ $alt_text = get_post_meta($imageID , '_wp_attachment_image_alt', true);
 
         <div class="single-hero-info blog-hero-info">
             
-            <a class="archive-link" href="/mental-health-blog/">Mental Health Blog</a>
+            <a class="archive-link" href="/news/">News & Updates</a>
 
             <h1 class="blog-title"><?php the_title(); ?></h1>
 
@@ -30,10 +30,6 @@ $alt_text = get_post_meta($imageID , '_wp_attachment_image_alt', true);
             
             <p class="blog-date"><?php echo get_the_date( 'F j, Y' ); ?></p>
 
-        </div>
-        
-        <div class="single-clinician-heroimg blog-hero-img">
-            <img class="clinician-single-headshot" src="<?php echo $image[0]; ?>" data-rjs="2" alt="<?php echo $alt_text; ?>" />
         </div>
 
     </div>

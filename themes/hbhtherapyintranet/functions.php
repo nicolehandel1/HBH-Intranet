@@ -255,3 +255,42 @@ if (!current_user_can('administrator') && !is_admin()) {
   show_admin_bar(false);
 }
 }
+
+##################################
+//programmatically set default role for new users
+##################################
+add_filter('pre_option_default_role', function($default_role){
+    return 'subcriber'; 
+    return $default_role; //
+});
+ 
+##################################
+//untick the send the new user and email 
+##################################
+add_action( 'user_new_form', 'dontchecknotify_register_form' );
+ 
+function dontchecknotify_register_form() { 
+    echo '<scr'.'ipt>jQuery(document).ready(function($) { 
+        $("#send_user_notification").removeAttr("checked"); 
+    } ); </scr'.'ipt>';
+}
+ 
+##################################
+//remove messy profile section items
+##################################
+if( is_admin() ){
+    remove_action( 'admin_color_scheme_picker', 'admin_color_scheme_picker' );
+    add_action( 'personal_options', 'prefix_hide_personal_options' );
+}
+ 
+function prefix_hide_personal_options() {
+  ?>
+    <script type="text/javascript">
+        jQuery( document ).ready(function( $ ){
+            $( '#your-profile .form-table:first, #your-profile h3:first, .yoast, .user-description-wrap, .user-url-wrap, .user-profile-picture, .user-profile-picture, h2, .user-pinterest-wrap, .user-myspace-wrap, .user-soundcloud-wrap, .user-tumblr-wrap, .user-wikipedia-wrap' ).remove();
+        } );
+    </script>
+  <?php
+}
+
+add_filter( 'wp_is_application_passwords_available', '__return_false' );

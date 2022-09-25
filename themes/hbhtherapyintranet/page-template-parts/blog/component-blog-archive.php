@@ -46,42 +46,8 @@ $posts = new WP_Query( $args );
 
                 <a class="" href="<?php the_permalink(); ?>">
 
-                    <img class="clinician-single-headshot" src="<?php echo $image[0]; ?>" data-rjs="2" alt="<?php echo $alt_text; ?>" />
-
+                    <h4><?php $category = get_the_category(); echo $category[0]->cat_name; ?></h4>
                     <h3><?php the_title() ?></h3>
-
-                    <?php if ( have_rows( 'blog_author' ) ): ?>
-                    <?php while ( have_rows( 'blog_author' ) ) : the_row(); ?>
-                    <?php if ( get_row_layout() == 'clinician' ) : ?>
-                    <?php $blog_authot_clincician = get_sub_field( 'blog_authot_clincician' ); ?>
-                    <?php if ( $blog_authot_clincician ) : ?>
-                    <?php $post = $blog_authot_clincician; ?>
-                    <?php setup_postdata( $post ); ?>
-
-                    <p class="blog-author"><?php the_title( ); ?>,
-                        <?php $license = wp_get_post_terms($post->ID, 'clinician-licensure'); if ($license) { $out = array(); foreach ($license as $license) {
-                                        $out[] = '' .$license->name .'';
-                                    }
-                                    echo join( ', ',$out ); } ?></p>
-
-                    <?php wp_reset_postdata(); ?>
-                    <?php endif; ?>
-                    <?php elseif ( get_row_layout() == 'other' ) : ?>
-                    <?php $blog_author_other = get_sub_field( 'blog_author_other' ); ?>
-                    <?php if ( $blog_author_other ) : ?>
-                    <?php $post = $blog_author_other; ?>
-                    <?php setup_postdata( $post ); ?>
-
-                    <p class="blog-author"><?php the_title(); ?></p>
-                    <?php wp_reset_postdata(); ?>
-
-                    <?php endif; ?>
-                    <?php endif; ?>
-                    <?php endwhile; ?>
-                    <?php else: ?>
-                    <?php // No layouts found ?>
-                    <?php endif; ?>
-
                     <p class="blog-date"><?php echo $date; ?></p>
 
                 </a>

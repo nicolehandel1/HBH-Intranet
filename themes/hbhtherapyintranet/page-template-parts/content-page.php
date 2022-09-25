@@ -29,6 +29,7 @@ h2 {
         
         <div class="default-content">
             
+            <h1 class="page-title"><?php echo get_the_title(); ?></h1>
             <div class="entry-content"><?php the_content(); ?></div>
             
         </div>

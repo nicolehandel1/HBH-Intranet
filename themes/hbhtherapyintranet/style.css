@@ -563,7 +563,7 @@ big {
     text-align: center;
     font-size: 2.5vw;
     line-height: 2.5vw;
-    padding: 60px 0;
+    padding: 22px 0;
     width: 75%;
     margin: auto;
 }
@@ -653,10 +653,14 @@ img {
     width: auto;
 }
 
+.rsp-img {
+    height: auto;
+    width: 100%;
+}
+
 figure {
     margin: 1em 0;
 }
-
 table {
     margin: 0 0 1.5em;
     width: 100%;
@@ -873,6 +877,10 @@ a.btn {
     width: 100%;
 }
 
+.section-title {
+    color: #7BBEB6;
+}
+
 .default-content {
     padding: 75px;
     background: #fff;
@@ -881,7 +889,6 @@ a.btn {
 .hero-wrap {
     margin-top: 100px;
 }
-
 .align-center {
     align-items: center;
 }
@@ -892,6 +899,13 @@ a.btn {
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+}
+
+.page-title {
+    font-weight: 800;
+    color: #4D4D4D;
+    background: #ece7e1;
+    padding: 5px 15px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -961,7 +975,7 @@ a.hdsocial {
     color: #7BBEB6;
 }
     
-span {
+.subhead-user {
     color: #7BBEB6;
 }    
 
@@ -975,6 +989,7 @@ span {
 .site-menu {
     display: flex;
     justify-content: flex-end;
+    font-size: 16px;
 }
 
 .caret {
@@ -2083,7 +2098,183 @@ a.clinician-card-link:hover {
 Clinicians Page
 ----------------------------- */
 
+.page-template-treatments_page {
+    background-color: #f5efe9;
+}
 
+.page-template-treatments_page .srvpg-title-wrap {
+    background-color: #edaa5c;
+}
+
+.page-template-treatments_page .pg-title {
+    color: #008587 !important;
+}
+
+.page-template-clinician_page {
+    background-color: #fff;
+}
+
+.bg-clinicians .butterfly-img-wrap {
+    margin-top: -65px;
+    width: 40%;
+}
+
+.bg-clinicians, .bg-about {
+    display: none;
+}
+
+.page-template-clinician_page .bg-clinicians {
+    display: flex;
+}
+
+.bg-clinicians .section-content {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    z-index: -1;
+
+}
+
+.filters-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.filter-wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.filters {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.filters .select {
+    width: 48%;
+}
+
+.filters-select:hover {
+    background-color: #085962;
+    color: #fff;
+}
+
+option:hover {
+    color: #7BBEB6;
+}
+
+.button:active,
+.button.is-checked {
+    background: #76559A;
+}
+
+p.search {
+    display: flex;
+    width: 30%;
+    margin: 25px;
+    border: 1px solid #085962;
+    background-color: #fff;
+}
+
+.search img {
+    align-self: center;
+    padding-left: 5px;
+    padding: 10px 25px;
+    height: 44px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding-left: 20px;
+    color: #4D4D4D;
+    border: 0;
+    font-weight: 400;
+}
+
+input[type="text"]:focus {
+    outline: 0;
+}
+
+h3.clinpage-phone {
+    font-family: acumin-pro, sans-serif;
+    color: #4D4D4D;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.grid {
+    margin-bottom: 100px;
+}
+
+.grid-sizer,
+.grid-item {
+    width: 25%;
+    padding: 30px;
+}
+
+@media only screen and (max-width: 1500px) {
+
+    .grid-sizer,
+    .grid-item {
+        width: 33%;
+    }
+
+    .filters {
+        width: 50%;
+    }
+
+    p.search {
+        width: 50%;
+    }
+
+    .filters-select {
+        width: 49%;
+        margin: 0;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .filter-wrap {
+        margin: 10px;
+    }
+
+    .filters {
+        width: 100%;
+    }
+
+    .filters-select {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    p.search {
+        width: 100%;
+    }
+
+    .grid-sizer,
+    .grid-item {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .grid-sizer,
+    .grid-item {
+        width: 100%;
+    }
+
+    .filters {
+        margin: 10px;
+    }
+}
 
 /*--------------------
 Home Page
@@ -2305,6 +2496,29 @@ ul.sidebar-bullets {
     }
 }
 
+    .article-grid {
+        display: flex;
+        flex-wrap:wrap;
+    }
+    .article-grid-item-wrap {
+        background-color: #fff;
+        border: 1px solid #979797;
+        box-shadow: -1px 2px 5px -2px #979797;
+        -webkit-box-shadow: -1px 2px 5px -2px #979797;
+        -moz-box-shadow: -1px 2px 5px -2px #979797;
+        position: relative;
+        top: 0;
+        width: 100%;
+        padding: 20px;
+        transition: top ease 0.3s;
+    }
+    .article-grid-item-wrap:hover {
+    top: -10px;
+    box-shadow: -2px 2px 4px -2px #4d4d4d;
+    -webkit-box-shadow: -2px 2px 4px -2px #4d4d4d;
+    -moz-box-shadow: -2px 2px 4px -2px #4d4d4d;
+}
+
 /*--------------------
 Blog Single
 ----------------------------- */
@@ -2500,7 +2714,208 @@ a.bauthor-more:hover {
 /*------------------------
 Service & Treatment Archive Pages
 ------------------------------------ */
+.page-template-services_page {
+    background-color: #f5efe9;
+}
 
+.srvpg-hero-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.srvpg-hero-section {
+    padding: 0px;
+    margin-bottom: -10px;
+
+}
+
+.srvpg-title-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    width: 50%;
+    padding: 175px 75px 150px 75px;
+    background-color: #7BBEB6;
+}
+
+.srvpg-summary-wrap {
+    width: 50%;
+    padding: 175px 75px 75px 75px;
+    background-color: #fff;
+}
+
+.srvpg-title-wrap .pg-title {
+    text-align: right;
+    margin: 0;
+    color: #085962;
+}
+
+.srvpg-title-wrap .phone {
+    width: 100%;
+    text-align: right;
+    color: #fff;
+}
+
+.srvpg-summary {
+    font-size: 22px;
+    line-height: 35px;
+}
+
+.srvpg-filter-warp {
+    width: auto;
+}
+
+.select select {
+    font-weight: 700;
+}
+
+.button-filter-wrap {
+    width: 33.33333%;
+    border: 1px solid #085962;
+    box-shadow: -2px 2px 2px -2px #085962;
+    -webkit-box-shadow: -2px 2px 2px -2px #085962;
+    -moz-box-shadow: -2px 2px 2px -2px #085962;
+}
+
+.service-filters:hover,
+.button-filter:hover,
+.service-filters:focus,
+.button-filter:focus {
+    background-color: #085962;
+    color: #fff;
+}
+
+.button-filter {
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    color: #4D4D4D;
+    font-weight: 700;
+    text-align: left;
+    border: 0px;
+    border-radius: 0px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.service-item {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 25px;
+    margin: 25px;
+}
+
+.srv-item-img {
+    width: 40%;
+}
+
+.srvpg-img {
+    width: 100%;
+}
+
+.srv-item-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 60%;
+    padding: 10px 75px;
+}
+
+a.srv-title {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 50px;
+    color: #008587;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1300px) {
+    .srvpg-title-wrap {
+        width: 40%;
+        justify-content: flex-end;
+    }
+
+    .srvpg-summary-wrap {
+        width: 60%;
+    }
+
+    .srvpg-title-wrap .pg-title {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .srvpg-title-wrap {
+        width: 100%;
+        justify-content: flex-start;
+        padding: 75px;
+    }
+
+    .srvpg-summary-wrap {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .srvpg-title-wrap .pg-title {
+        text-align: left;
+    }
+
+    .srvpg-title-wrap .phone {
+        text-align: left;
+        width: 85%;
+    }
+
+    .srvpg-summary {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .service-item {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .srv-item-img {
+        width: 100%;
+    }
+
+    .srv-item-info {
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    a.srv-title {
+        margin-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .srvpg-title-wrap {
+        justify-content: center;
+        padding: 75px 20px;
+    }
+
+    .select {
+        width: 100%;
+    }
+
+    .button-filter-wrap {
+        width: 100%;
+        height: 3em;
+        line-height: 3;
+    }
+
+    a.srv-title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .srv-item-info p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
 
 /*--------------------
 About Page
@@ -2639,8 +3054,6 @@ h2.office-subtitle {
 #slb_viewer_wrap .slb_theme_slb_baseline .slb_viewer_overlay {
     background-color: #fff;
 }
-
-/* ===== Pins on the map ===== */
 
 /*----------------- EF --------------------*/
 

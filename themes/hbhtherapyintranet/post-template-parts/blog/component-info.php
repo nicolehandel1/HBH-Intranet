@@ -65,30 +65,10 @@
         
         <div class="sidebar">
             
-            <p class="clinician-subtitle">Share</p>
+            <p class="clinician-subtitle">Archive</p>
             <hr>
-            <div class="share-icons">
-                <a href="http://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>" target="_blank">
-                    <i class="fab fa-facebook-f" alt="Facebook share link"></i> 
-                </a>
-                
-                <a href="https://twitter.com/share?url=<?php the_permalink(); ?>&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
-                    <i class="fab fa-twitter" alt="Twitter share link"></i>
-                </a>
-                
-                <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=<?php the_permalink(); ?>" target="_blank">
-                    <i class="fab fa-linkedin-in" alt="LinkedIn share link"></i>
-                </a>
-            </div>
             
-            <p class="clinician-subtitle">Appointments</p>
-            <hr>
-            <a class="phone" href="tel:<?php the_field( 'header_phone_number_link', 'option' ); ?>"><?php the_field( 'header_phone_number', 'option' ); ?></a>
-
-            <a class="btn" href="<?php the_field( 'view_availability_link', 'option' ); ?>" target="_blank"><?php the_field( 'clinician_button_label', 'option' ); ?></a>
-            
-            <a class="archive-link" href="/counselors-appointments/"><?php the_field( 'clinicians_view_all_label', 'option' ); ?></a>
-
+        
         </div>
 
     </div>
