@@ -69,32 +69,19 @@ Thriveworks is committed to unparalleled clinical quality and client service. As
 </p>
 
 
-<?php /**
- * Setup query to show the ‘services’ post type with ‘8’ posts.
- * Output the title with an excerpt.
- */
-  // Get your terms and put them into an array
-  $issue_terms = get_terms([
-    'taxonomy' => 'clinician-color',
-    'hide_empty' => false,
-  ]);?>
+
 
 <div class="section-content">
     <div class="list">
 
-        <?php
-
-  // Run foreach over each term to setup query and display for posts
-  foreach ($issue_terms as $issue_term) {
-    $the_query = new WP_Query( array(
-      'post_type' => 'handbook',
+<?php 
+  $args = array(  
+        'post_type' => 'handbook',
         'post_status' => 'publish',
-        'posts_per_page' => -1,
-        'orderby' => 'name',
-        'order' => 'ASC',
-    ) ); 
-      
-      while($the_query->have_posts()) : $the_query->the_post(); ?>
+    );
+        $loop = new WP_Query( $args ); 
+        
+    while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
         <div class="list-item" data-category="transition">
             
@@ -110,7 +97,7 @@ Thriveworks is committed to unparalleled clinical quality and client service. As
 
         </div>
 
-        <?php endwhile; } ?>
+        <?php endwhile; wp_reset_postdata();  ?>
 
     </div>
 </div>
