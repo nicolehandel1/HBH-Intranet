@@ -63,7 +63,7 @@
                 <div class="site-menu">
                     <span class="subhead-user" style="padding-right: 10px;"><?php global $current_user; wp_get_current_user(); if ( is_user_logged_in() ) { echo  $current_user->display_name; } else { wp_loginout(); } ?> - </span>
                     <a class="" style="padding-right: 10px;" href="/wp-admin/">Edit</a>
-                    <a class="" href="/wp-login.php?loggedout=true&wp_lang=en_US">Logout</a>
+                    <a class="" href="<?php echo wp_logout_url(); ?>">Logout</a>
                 </div>
                 
             </div></div>

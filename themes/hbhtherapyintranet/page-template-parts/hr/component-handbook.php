@@ -68,9 +68,6 @@ Thriveworks is committed to unparalleled clinical quality and client service. As
     <img src="<?php the_field( 'search_icon', 'option' ); ?>" data-rjs="2" alt="search icon" />
 </p>
 
-
-
-
 <div class="section-content">
     <div class="list">
 
@@ -101,6 +98,8 @@ Thriveworks is committed to unparalleled clinical quality and client service. As
 
     </div>
 </div>
+
+
 
 <script>
 
