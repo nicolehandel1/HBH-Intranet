@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all single posts
+ * The template for displaying all single handbooks
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
@@ -13,9 +13,9 @@ get_header(); ?>
 
 <?php
 
-get_template_part( 'post-template-parts/service/component', 'hero');
+get_template_part( 'post-template-parts/handbook/component', 'hero');
         
-get_template_part( 'post-template-parts/service/component', 'info');?>
+get_template_part( 'post-template-parts/handbook/component', 'info');?>
     
 </article>    
     
