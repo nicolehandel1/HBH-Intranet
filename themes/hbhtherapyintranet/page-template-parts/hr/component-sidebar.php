@@ -1,34 +1,47 @@
 <style>
     
-    a.author {
-        display: block;
-        font-weight: 600;
-        margin-top: 20px;
-        color: #085962;
-    }
-    
-    a.author:hover {
-        color: #7BBEB6;
-    }
-    
-    p.job-title {
-        margin: 10px 0px;
-    }
-    
-    a.user-email {
-        color: #4D4D4D;
-        font-size: 16px;
-    }
-    
-    a.user-email:hover {
-        color: #7BBEB6;
-    }
-    
-    .hr-sidebar .btn {
-        width: 100%;
-        margin-bottom: 10px;
-    }    
+.hdshot-wrap {
+    width: 100%;
+    background: #7BBEB6;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+}
 
+.hdshot-wrap:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+
+a.author {
+    display: block;
+    font-weight: 600;
+    margin-top: 20px;
+    color: #085962;
+}
+
+a.author:hover {
+    color: #7BBEB6;
+}
+
+p.job-title {
+    margin: 10px 0px;
+}
+
+a.user-email {
+    color: #4D4D4D;
+    font-size: 16px;
+}
+
+a.user-email:hover {
+    color: #7BBEB6;
+}
+
+.hr-sidebar .btn {
+    width: 100%;
+    margin-bottom: 10px;
+}
 </style>
 
 <?php 
@@ -43,7 +56,8 @@
 ?>
 
 <?php if ( $author ) : ?>
-    <img class="rsp-img" src="<?php the_field( 'headshot', $author ); ?>" />
+
+    <div class="hdshot-wrap" style="background-image: url('<?php the_field( 'headshot', $author ); ?>')"></div>
     <a class="author" href="<?php echo get_author_posts_url($author->ID); ?>" ><?php echo $author->display_name; ?></a>
     <p class="job-title"><?php the_field( 'job_title', $author); ?></p>
     <a class="user-email" href="" ><?php echo $author->user_email; ?></a>

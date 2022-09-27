@@ -2292,10 +2292,6 @@ ul.sidebar-bullets {
         text-align: left;
     }
 
-    .clin-info-content {
-        flex-wrap: wrap-reverse;
-    }
-
     .sidebar {
         width: 100%;
         padding: 20px 40px;
