@@ -315,9 +315,19 @@
                                     "placeholder": ""
                                 }
                             ]
-                        },
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_63327a3ec54f8": {
+                    "key": "layout_63327a3ec54f8",
+                    "name": "logo_button",
+                    "label": "Logo Link",
+                    "display": "block",
+                    "sub_fields": [
                         {
-                            "key": "field_633275f42ae62",
+                            "key": "field_63327a3ec54fc",
                             "label": "Logo Link",
                             "name": "logo_link",
                             "type": "group",
@@ -332,7 +342,7 @@
                             "layout": "block",
                             "sub_fields": [
                                 {
-                                    "key": "field_633275f42ae63",
+                                    "key": "field_63327a3ec54fd",
                                     "label": "Logo",
                                     "name": "logo",
                                     "type": "image",
@@ -356,7 +366,7 @@
                                     "mime_types": ""
                                 },
                                 {
-                                    "key": "field_633275f42ae64",
+                                    "key": "field_63327a3ec54fe",
                                     "label": "Link",
                                     "name": "ext_link",
                                     "type": "url",
@@ -858,5 +868,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1664251414
+    "modified": 1664252494
 }

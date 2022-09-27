@@ -51,11 +51,12 @@
 				<?php endwhile; ?>
 			<?php endif; ?>
 
-        <?php if ( have_rows( 'logo_link' ) ) : ?>
+        <?php elseif ( get_row_layout() == 'logo_button' ) : ?>
+			<?php if ( have_rows( 'logo_link' ) ) : ?>
 				<?php while ( have_rows( 'logo_link' ) ) : the_row(); ?>
 					<?php if ( get_sub_field( 'logo' ) ) : ?>
-				        <a class="hr-btn btn" href="<?php the_sub_field( 'logo_link' ); ?>"><img class="rsp-img sidebar-logo" src="<?php the_sub_field( 'logo' ); ?>" /></a>
-				    <?php endif ?>
+                    <a class="hr-btn btn" href="<?php the_sub_field( 'logo_link' ); ?>"><img src="<?php the_sub_field( 'logo' ); ?>" /></a>
+					<?php endif ?>
 				<?php endwhile; ?>
 			<?php endif; ?>
                         

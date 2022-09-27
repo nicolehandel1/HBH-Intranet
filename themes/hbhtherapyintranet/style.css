@@ -1685,6 +1685,8 @@ a.user-email:hover {
 
 .hr-sidebar .btn {
     width: 100%;
+    height: 65px;
+    line-height: 1.5;
     margin-bottom: 10px;
 }
 /*--------------------

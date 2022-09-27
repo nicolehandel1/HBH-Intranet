@@ -315,7 +315,17 @@
                                     "placeholder": ""
                                 }
                             ]
-                        },
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_63327750509da": {
+                    "key": "layout_63327750509da",
+                    "name": "logo_button",
+                    "label": "Logo Link",
+                    "display": "block",
+                    "sub_fields": [
                         {
                             "key": "field_6332734992f5d",
                             "label": "Logo Link",
@@ -858,5 +868,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1664250732
+    "modified": 1664251752
 }
