@@ -2,7 +2,7 @@
 // Updates
 ?>
 
-<p class="clinician-subtitle" style="color: #76559A;">HR Updates</p>
+<p class="clinician-subtitle" style="color: #76559A;">Operations Updates</p>
 <hr>
 <div>
     <?php if ( have_rows( 'hr_article' ) ) :  while ( have_rows( 'hr_article' ) ) : the_row(); 
@@ -29,7 +29,7 @@
 </div>
 
 <?php 
-// Handbook
+// Trainings
 ?>
 
 <p class="clinician-subtitle" style="margin-top: 50px;"><?php the_field( 'handebook_section_title' ); ?></p>
@@ -50,7 +50,7 @@
 
 <?php 
   $args = array(  
-        'post_type' => 'handbook',
+        'post_type' => 'training',
         'post_status' => 'publish',
     );
         $loop = new WP_Query( $args ); 

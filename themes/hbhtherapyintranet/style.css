@@ -2047,11 +2047,6 @@ ul.sidebar-bullets {
     color: #085962;
 }
 
-.sidebar .btn {
-    width: auto;
-    font-size: 18px;
-}
-
 @media only screen and (max-width: 800px) {
     .single-hero-info {
         width: 100%;
