@@ -50,6 +50,14 @@
                     <a class="hr-btn btn" href="<?php the_sub_field( 'ext_link' ); ?>" target="_blank"><?php the_sub_field( 'ext_label' ); ?></a>
 				<?php endwhile; ?>
 			<?php endif; ?>
+
+        <?php if ( have_rows( 'logo_link' ) ) : ?>
+				<?php while ( have_rows( 'logo_link' ) ) : the_row(); ?>
+					<?php if ( get_sub_field( 'logo' ) ) : ?>
+				        <a class="hr-btn btn" href="<?php the_sub_field( 'logo_link' ); ?>"><img class="rsp-img sidebar-logo" src="<?php the_sub_field( 'logo' ); ?>" /></a>
+				    <?php endif ?>
+				<?php endwhile; ?>
+			<?php endif; ?>
                         
 		<?php endif; ?>
 	<?php endwhile; ?>
@@ -80,6 +88,7 @@
 					<?php endif ?>
 				<?php endwhile; ?>
 			<?php endif; ?>
+
 		<?php elseif ( get_row_layout() == 'ext_button' ) : ?>
 			<?php if ( have_rows( 'external_link' ) ) : ?>
 				<?php while ( have_rows( 'external_link' ) ) : the_row(); ?>
