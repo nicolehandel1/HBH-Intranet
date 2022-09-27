@@ -1,5 +1,12 @@
 <style>
     
+.hr-sidebar {
+    /*box-shadow: 6px 7px 8px -1px rgb(151 151 151 / 69%);
+    -webkit-box-shadow: 6px 7px 8px -1px rgb(151 151 151 / 69%);
+    -moz-box-shadow: 6px 7px 8px -1px rgba(151,151,151,0.69);
+    z-index: 100;*/
+ }    
+    
 .hdshot-wrap {
     width: 100%;
     background: #7BBEB6;
