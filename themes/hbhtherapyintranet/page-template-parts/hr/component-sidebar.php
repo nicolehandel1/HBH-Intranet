@@ -4,8 +4,8 @@
     width: 100%;
     background: #7BBEB6;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top;
+    background-size: cover;
+    background-position: center;
 }
 
 .hdshot-wrap:after {
