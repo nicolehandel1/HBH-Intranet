@@ -1,23 +1,5 @@
 <style>
-    span .read-more:hover {
-        color: #f7921e;
-    }
 
-    .news-title {
-        color: #008587;
-        font-size: 26px;
-        font-weight: 800;
-        margin: 10px 0;
-    }
-
-    .news-title:hover {
-        color: #F7931E;
-    }
-
-    .news-date {
-        color: #979797;
-        font-size: 16px;
-    }
 </style>
 
 <div class="section">

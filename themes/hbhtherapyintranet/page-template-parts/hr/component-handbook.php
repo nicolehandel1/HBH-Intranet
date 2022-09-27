@@ -1,67 +1,44 @@
-<style>
-    
-.list-item {
-width: 100%;
-margin: 10px;
-cursor:pointer;
-/*background: grey;*/
-}
+<?php 
+// Updates
+?>
 
-.accordion-title {
-display: flex;
-justify-content: space-between;
-}
+<p class="clinician-subtitle" style="color: #76559A;">HR Updates</p>
+<hr>
+<div>
+    <?php if ( have_rows( 'hr_article' ) ) :  while ( have_rows( 'hr_article' ) ) : the_row(); 
+		 $article = get_sub_field( 'article' ); if ( $article ) : 
+			 $post = $article; 
+			 setup_postdata( $post ); ?>
 
-.handbook-subtitle {
-    color: #008587;
-font-weight: 700;
-margin: 0 10px;
-}
+    <div class="article-grid" data-category="transition">
+        <div class="article-grid-item-wrap">
 
-.handbook-subtitle:hover {
-color: #F7931E;
-}
+            <a href="<?php the_permalink(); ?>">
+                <h4 class="news-title"><?php the_title() ?></h4>
+            </a>
+            <p class="news-date"><?php echo get_the_date( 'F j, Y' ); ?></p>
+            <p class=""><?php the_field( 'single_excerpt_summary' ); ?> <a class="read-more" href="<?php the_permalink(); ?>">[READ MORE]</a></p>
 
-.is-accordion-open .handbook-subtitle {
-color: #F7931E;
-}
+        </div>
+    </div>
 
-    .close-caret {
-        display: none;
-    }   
-    
-    .is-accordion-open .close-caret {
-        display: block;
-    } 
-    
-    .is-accordion-open .open-caret {
-        display: none;
-    } 
-    
-.list-hr {
-margin-bottom: 10px;
-}
+    <?php wp_reset_postdata();  endif;  endwhile;  else : ?>
+    <?php // No rows found ?>
+    <?php endif; ?>
 
-.is-accordion-open {
-background: #fff;
-z-index: 100;
-}
+</div>
 
-.accordion-content {
-display: none;
-}
+<?php 
+// Handbook
+?>
 
-</style>
-
-<p class="clinician-subtitle">Employee Handbook</p>
+<p class="clinician-subtitle" style="margin-top: 50px;"><?php the_field( 'handebook_section_title' ); ?></p>
 <hr>
 
-<h4>Welcome to HBH!</h4>
-
-<p>We’re excited to have you on our team. You were hired because we believe you share our vision and can help us change mental health counseling and coaching for the better.
-
-Thriveworks is committed to unparalleled clinical quality and client service. As part of the team, we hope you’ll discover that the pursuit of excellence is a rewarding aspect of your career with us. It’s our goal to recruit the best possible team members (like you) and then provide them opportunities for advancement and professional growth that will compel them to stay employed with us for life.
-</p>
+<?php if ( have_rows( 'opening_section' ) ) : while ( have_rows( 'opening_section' ) ) : the_row(); ?>
+    <h4><?php the_sub_field( 'subheading' ); ?></h4>
+    <p><?php the_sub_field( 'content' ); ?></p>
+<?php endwhile; endif; ?>
 
 <p class="search">
     <input type="text" class="quicksearch" placeholder="Search..." />
@@ -99,7 +76,10 @@ Thriveworks is committed to unparalleled clinical quality and client service. As
     </div>
 </div>
 
-
+<?php if ( have_rows( 'closing_section' ) ) :  while ( have_rows( 'closing_section' ) ) : the_row(); ?>
+    <h4><?php the_sub_field( 'subheading' ); ?></h4>
+    <p><?php the_sub_field( 'content' ); ?></p>
+<?php endwhile;  endif; ?>
 
 <script>
 

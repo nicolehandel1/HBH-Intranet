@@ -26,7 +26,7 @@
                             $location_page_link = get_sub_field( 'location_page_link' ); ?>
                         
                         <address class="ft-location">
-                            <h4 class="ft-titlink"><?php the_sub_field( 'location_name' ); ?></h4></a>
+                            <h4 class="ft-titlink"><?php the_sub_field( 'location_name' ); ?></h4>
                             <a class="ftphone" href="tel:<?php the_sub_field( 'phone_link' ); ?>;"><?php the_sub_field( 'phone_label' ); ?></a>
                             <p class="ftaddress"><?php the_sub_field( 'address' ); ?></p>
                         </address>

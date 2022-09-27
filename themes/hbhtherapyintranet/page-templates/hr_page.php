@@ -19,7 +19,7 @@
                 <h1 class="page-title"><?php the_field( 'page_title' ); ?></h1>
                 <div class="clin-info-content">
 
-                    <div class="sidebar">
+                    <div class="sidebar hr-sidebar">
                         <?php  get_template_part( 'page-template-parts/hr/component', 'sidebar'); ?>
                     </div>
 
