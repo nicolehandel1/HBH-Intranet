@@ -28,8 +28,8 @@ h2 {
             
             <div class="entry-content" style="display: flex; flex-wrap: wrap-reverse;">
                 <?php 
-                get_template_part( 'page-template-parts/home/component', 'home-updates');
                 get_template_part( 'page-template-parts/home/component', 'home-calendar');
+                get_template_part( 'page-template-parts/home/component', 'home-updates');
                 ?>
             </div>
             

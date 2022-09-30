@@ -1,4 +1,4 @@
-<div class="section" style="width: 50%;">
+<div class="section" style="width: 40%;">
     <div class="section-content align-center">
         <div class="">
             <h1 class="section-title"><?php the_field( 'news_section_title' ); ?></h1>
