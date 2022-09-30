@@ -294,3 +294,12 @@ function prefix_hide_personal_options() {
 }
 
 add_filter( 'wp_is_application_passwords_available', '__return_false' );
+
+/**
+Dashicons
+**/
+
+function enable_frontend_dashicons() {
+  wp_enqueue_style( 'dashicons' );
+}
+add_action( 'wp_enqueue_scripts', 'enable_frontend_dashicons' );

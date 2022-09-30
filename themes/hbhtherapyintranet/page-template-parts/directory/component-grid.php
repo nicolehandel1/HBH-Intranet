@@ -25,7 +25,7 @@ $user_query = new WP_User_Query( $args ); ?>
     <div class="hdshot-wrap" style="background-image: url('<?php the_field( 'headshot', $author ); ?>')"></div>
     <a class="author" href="<?php echo get_author_posts_url($author->ID); ?>" ><?php echo $author->display_name; ?></a>
     <p class="job-title"><?php the_field( 'job_title', $author); ?></p>
-    <a class="user-email" href="" ><?php echo $author->user_email; ?></a>
+    <a class="user-email" href="mailto:<?php echo $author->user_email; ?>" ><?php echo $author->user_email; ?></a>
 
             </div>
     </div>
