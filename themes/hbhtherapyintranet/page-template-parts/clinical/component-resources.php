@@ -1,12 +1,16 @@
 <style>
+.employee-grid-item {
+    width: 25%;
+    margin: 3%;
+}    
 .hb-sbt{
      color: #4D4D4D;   
     }
 .hb-cat {
     display: inline;
     background: #fff;
-    color: #008587;
-    border: solid 1px #008587;
+    color: #76559A;
+    border: solid 1px #76559A;
     font-weight: 400;
     font-size: 14px;
     line-height: 18px;
@@ -14,13 +18,14 @@
     margin: 0 10px;
     border-radius: 4px;
 }
+    
 </style>
 
 <?php 
 // Updates
 ?>
 
-<p class="clinician-subtitle" style="color: #76559A;">Operations Updates</p>
+<p class="clinician-subtitle" style="color: #76559A;">Clinical Updates</p>
 <hr>
 <div>
     <?php if ( have_rows( 'hr_article' ) ) :  while ( have_rows( 'hr_article' ) ) : the_row(); 
@@ -47,7 +52,35 @@
 </div>
 
 <?php 
-// Trainings
+// Team
+?>
+
+<p class="clinician-subtitle" style="margin-top: 50px;"><?php the_field( 'team_section_title' ); ?></p>
+<hr>
+
+<div class="" style="display: flex; flex-wrap: wrap;">
+
+    <?php if ( have_rows( 'team_member' ) ) : ?>
+    <?php while ( have_rows( 'team_member' ) ) : the_row(); ?>
+    <?php $employee = get_sub_field( 'employee' ); ?>
+    <?php if ( $employee ) : ?>
+    
+    <div class="employee-grid-item">
+        <div class="hdshot-wrap" style="background-image: url('<?php the_field( 'headshot', $employee ); ?>')"></div>
+        <a class="author" href="<?php echo get_author_posts_url($employee->ID); ?>"><?php echo $employee->display_name; ?></a>
+        <p class="job-title"><?php the_field( 'job_title', $employee); ?></p>
+        <a class="user-email" href=""><?php echo $employee->user_email; ?></a>
+    </div>
+    
+    <?php endif; ?>
+    <?php endwhile; ?>
+    <?php else : ?>
+    <?php // No rows found ?>
+    <?php endif; ?>
+</div>
+
+<?php 
+// Clinical Resources
 ?>
 
 <p class="clinician-subtitle" style="margin-top: 50px;"><?php the_field( 'handebook_section_title' ); ?></p>
@@ -68,7 +101,7 @@
 
 <?php 
   $args = array(  
-        'post_type' => 'training',
+        'post_type' => 'clinical',
         'post_status' => 'publish',
     );
         $loop = new WP_Query( $args ); 
@@ -82,7 +115,7 @@
                     
                 
                 <div style="display: flex;">
-                    <?php $terms = wp_get_post_terms(get_the_id(), 'training-type'); foreach ($terms as $term) if( has_term('', 'training-type' ) ): ?><p class="hb-cat"><?php { echo $term->name.' ';} ?></p><?php  endif; ?>
+                    <?php $terms = wp_get_post_terms(get_the_id(), 'resource-category'); foreach ($terms as $term) if( has_term('', 'resource-category' ) ): ?><p class="hb-cat"><?php { echo $term->name.' ';} ?></p><?php  endif; ?>
                     <p class="handbook-subtitle hb-sbt"><?php the_title(); ?></p>
                 
                 </div>

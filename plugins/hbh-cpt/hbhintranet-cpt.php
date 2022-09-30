@@ -85,7 +85,7 @@ function section_taxonomy() {
 add_action( 'init', 'section_taxonomy');
 
 
-// Register Custom Post Type Handbook
+// Register Custom Post Type Training
 function create_training_cpt() {
 
 	$labels = array(
@@ -160,4 +160,81 @@ function training_taxonomy() {
     );
 }
 add_action( 'init', 'training_taxonomy');
+
+
+// Register Custom Post Type Clinical
+function create_clinical_cpt() {
+
+	$labels = array(
+		'name' => _x( 'Clinical Resource', 'Post Type General Name', 'textdomain' ),
+		'singular_name' => _x( 'Clinical Resource', 'Post Type Singular Name', 'textdomain' ),
+		'menu_name' => _x( 'Clinical Resource', 'Admin Menu text', 'textdomain' ),
+		'name_admin_bar' => _x( 'Clinical Resource', 'Add New on Toolbar', 'textdomain' ),
+		'archives' => __( 'Clinical Resource Archives', 'textdomain' ),
+		'attributes' => __( 'Clinical Resource Attributes', 'textdomain' ),
+		'parent_item_colon' => __( 'Parent Resource:', 'textdomain' ),
+		'all_items' => __( 'All Resources', 'textdomain' ),
+		'add_new_item' => __( 'Add New Resource', 'textdomain' ),
+		'add_new' => __( 'Add New Resource', 'textdomain' ),
+		'new_item' => __( 'New Resource', 'textdomain' ),
+		'edit_item' => __( 'Edit Resource', 'textdomain' ),
+		'update_item' => __( 'Update Resource', 'textdomain' ),
+		'view_item' => __( 'View Resource', 'textdomain' ),
+		'view_items' => __( 'View Resources', 'textdomain' ),
+		'search_items' => __( 'Search Resources', 'textdomain' ),
+		'not_found' => __( 'Not found', 'textdomain' ),
+		'not_found_in_trash' => __( 'Not found in Trash', 'textdomain' ),
+		'featured_image' => __( 'Featured Image', 'textdomain' ),
+		'set_featured_image' => __( 'Set featured image', 'textdomain' ),
+		'remove_featured_image' => __( 'Remove featured image', 'textdomain' ),
+		'use_featured_image' => __( 'Use as featured image', 'textdomain' ),
+		'insert_into_item' => __( 'Insert into Resource', 'textdomain' ),
+		'uploaded_to_this_item' => __( 'Uploaded to this Resource', 'textdomain' ),
+		'items_list' => __( 'Clinical Resource list', 'textdomain' ),
+		'items_list_navigation' => __( 'Clinical Resource list navigation', 'textdomain' ),
+		'filter_items_list' => __( 'Filter Clinical Resource list', 'textdomain' ),
+	);
+	$args = array(
+		'label' => __( 'Clinical Resource', 'textdomain' ),
+		'description' => __( 'HBH Clinical Resources', 'textdomain' ),
+		'labels' => $labels,
+		'menu_icon' => 'dashicons-universal-access-alt',
+		'supports' => array('title', 'custom-fields'),
+		'taxonomies' => array('resource-category'),
+		'public' => true,
+		'show_ui' => true,
+		'show_in_menu' => true,
+		'menu_position' => 5,
+		'show_in_admin_bar' => true,
+		'show_in_nav_menus' => true,
+		'can_export' => true,
+		'has_archive' => false,
+		'hierarchical' => false,
+        'rewrite' => array('slug' => 'clinical'),
+		'exclude_from_search' => false,
+		'show_in_rest' => true,
+		'publicly_queryable' => true,
+		'capability_type' => 'post',
+	);
+	register_post_type( 'clinical', $args );
+
+}
+add_action( 'init', 'create_clinical_cpt', 0 );
+
+function clinical_taxonomy() {
+    register_taxonomy(
+        'resource-category',  // The name of the taxonomy. Name should be in slug form (must not contain capital letters or spaces).
+        'clinical',             // post type name
+        array(
+            'hierarchical' => true,
+            'label' => 'Resource Category', // display name
+            'query_var' => true,
+            'rewrite' => array(
+                'slug' => 'resource-category',    // This controls the base slug that will display before each term
+                'with_front' => false  // Don't display the category base before
+            )
+        )
+    );
+}
+add_action( 'init', 'clinical_taxonomy');
 ?>

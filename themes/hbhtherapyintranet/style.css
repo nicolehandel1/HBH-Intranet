@@ -1597,6 +1597,7 @@ HR
 .accordion-title {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .handbook-subtitle {
