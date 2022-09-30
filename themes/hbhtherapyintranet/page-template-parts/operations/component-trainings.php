@@ -4,6 +4,7 @@
     }
 .hb-cat {
     display: inline;
+    max-height: 30px;
     background: #fff;
     color: #008587;
     border: solid 1px #008587;
