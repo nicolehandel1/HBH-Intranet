@@ -26,7 +26,7 @@ h2 {
         
         <div class="default-content">
             
-            <div class="entry-content">
+            <div class="entry-content" style="display: flex; flex-wrap: wrap-reverse;">
                 <?php 
                 get_template_part( 'page-template-parts/home/component', 'home-updates');
                 get_template_part( 'page-template-parts/home/component', 'home-calendar');
