@@ -20,37 +20,6 @@
 }
     
 </style>
-
-<?php 
-// Updates
-?>
-
-<p class="clinician-subtitle" style="color: #76559A;"><?php the_field( 'updates_title' ); ?></p>
-<hr>
-<div>
-    <?php if ( have_rows( 'hr_article' ) ) :  while ( have_rows( 'hr_article' ) ) : the_row(); 
-		 $article = get_sub_field( 'article' ); if ( $article ) : 
-			 $post = $article; 
-			 setup_postdata( $post ); ?>
-
-    <div class="article-grid" data-category="transition">
-        <div class="article-grid-item-wrap">
-
-            <a href="<?php the_permalink(); ?>">
-                <h4 class="news-title"><?php the_title() ?></h4>
-            </a>
-            <p class="news-date"><?php echo get_the_date( 'F j, Y' ); ?></p>
-            <p class=""><?php the_field( 'single_excerpt_summary' ); ?> <a class="read-more" href="<?php the_permalink(); ?>">[READ MORE]</a></p>
-
-        </div>
-    </div>
-
-    <?php wp_reset_postdata();  endif;  endwhile;  else : ?>
-    <p>You are all up-to-date!</p>
-    <?php endif; ?>
-
-</div>
-
 <?php 
 // Team
 ?>
@@ -95,3 +64,33 @@
     <h4><?php the_sub_field( 'subheading' ); ?></h4>
     <p><?php the_sub_field( 'content' ); ?></p>
 <?php endwhile;  endif; ?>
+
+<?php 
+// Updates
+?>
+
+<p class="clinician-subtitle" style="color: #76559A;"><?php the_field( 'updates_title' ); ?></p>
+<hr>
+<div>
+    <?php if ( have_rows( 'hr_article' ) ) :  while ( have_rows( 'hr_article' ) ) : the_row(); 
+		 $article = get_sub_field( 'article' ); if ( $article ) : 
+			 $post = $article; 
+			 setup_postdata( $post ); ?>
+
+    <div class="article-grid" data-category="transition">
+        <div class="article-grid-item-wrap">
+
+            <a href="<?php the_permalink(); ?>">
+                <h4 class="news-title"><?php the_title() ?></h4>
+            </a>
+            <p class="news-date"><?php echo get_the_date( 'F j, Y' ); ?></p>
+            <p class=""><?php the_field( 'single_excerpt_summary' ); ?> <a class="read-more" href="<?php the_permalink(); ?>">[READ MORE]</a></p>
+
+        </div>
+    </div>
+
+    <?php wp_reset_postdata();  endif;  endwhile;  else : ?>
+    <p>You are all up-to-date!</p>
+    <?php endif; ?>
+
+</div>
