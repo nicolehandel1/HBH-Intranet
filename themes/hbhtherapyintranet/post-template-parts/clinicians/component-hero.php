@@ -11,7 +11,7 @@ $author = get_queried_object();
 
         <div class="single-hero-info">
             <h1 class="blog-title"><?php echo $author->display_name; ?></h1>
-            <p class="clinician-subtitle"><?php the_field( 'job_title' ); ?></p>
+            <p class="clinician-subtitle"><?php the_field( 'job_title', $author ); ?></p>
         </div>
 
     </div>

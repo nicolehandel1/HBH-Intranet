@@ -10,7 +10,7 @@ $author = get_queried_object();
             <hr>
             
             <a class="sd-email" href="mailto:<?php echo $author->user_email; ?>"><span class="dashicons dashicons-email-alt2"></span><?php echo $author->user_email; ?></a>
-            <a class="hr-btn btn" href="<?php the_field( 'linkedin' ); ?>"><img src="http://intranet.hbhtherapy.com/wp-content/uploads/2022/09/Linkedin-logo-png.png" /></a>
+            <a class="hr-btn btn" href="<?php the_field( 'linkedin', $author ); ?>"><img src="http://intranet.hbhtherapy.com/wp-content/uploads/2022/09/Linkedin-logo-png.png" /></a>
 
         </div>
         
@@ -21,7 +21,7 @@ $author = get_queried_object();
         <p class="clinician-subtitle">About Me</p>
             <hr>    
             
-         <p><?php the_field( 'about_me'); ?></p>
+         <p><?php the_field( 'about_me', $author); ?></p>
 
            
             
