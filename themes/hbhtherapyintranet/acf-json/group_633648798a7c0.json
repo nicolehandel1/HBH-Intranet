@@ -946,7 +946,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "page-templates\/clinical_page.php"
+                "value": "page-templates\/department.php"
             }
         ]
     ],
@@ -961,5 +961,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1664501935
+    "modified": 1664502119
 }
