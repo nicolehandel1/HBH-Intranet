@@ -22,59 +22,6 @@
             "maxlength": ""
         },
         {
-            "key": "field_6332642507c5a",
-            "label": "Director of Operations",
-            "name": "",
-            "type": "tab",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "placement": "top",
-            "endpoint": 0
-        },
-        {
-            "key": "field_6332642507c60",
-            "label": "Section Title",
-            "name": "director_section_title",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
-        },
-        {
-            "key": "field_6332642507c65",
-            "label": "Employee",
-            "name": "employee",
-            "type": "user",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "role": "",
-            "allow_null": 0,
-            "multiple": 0,
-            "return_format": "object"
-        },
-        {
             "key": "field_6332642507c6b",
             "label": "Section One",
             "name": "",
@@ -868,5 +815,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1664251752
+    "modified": 1664916090
 }

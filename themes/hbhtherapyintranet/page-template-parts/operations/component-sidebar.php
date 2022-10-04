@@ -1,23 +1,4 @@
 <?php 
-// Updates
-?>
-
-<p class="clinician-subtitle" style="margin-top: 0px;"><?php the_field( 'director_section_title' ); ?></p>
-<hr>
-
-<?php 
-    $author = get_field( 'employee' ); 
-?>
-
-<?php if ( $author ) : ?>
-
-    <div class="hdshot-wrap" style="background-image: url('<?php the_field( 'headshot', $author ); ?>')"></div>
-    <a class="author" href="<?php echo get_author_posts_url($author->ID); ?>" ><?php echo $author->display_name; ?></a>
-    <p class="job-title"><?php the_field( 'job_title', $author); ?></p>
-    <a class="user-email" href="" ><?php echo $author->user_email; ?></a>
-<?php endif; ?>
-
-<?php 
 // Buttons
 ?>
 
