@@ -3,10 +3,10 @@
     "title": "Training",
     "fields": [
         {
-            "key": "field_633264c87635c",
-            "label": "Section Content",
-            "name": "section_content",
-            "type": "wysiwyg",
+            "key": "field_633ca164e34bd",
+            "label": "Content",
+            "name": "content",
+            "type": "flexible_content",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,11 +15,98 @@
                 "class": "",
                 "id": ""
             },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1,
-            "delay": 0
+            "layouts": {
+                "layout_633ca24804e45": {
+                    "key": "layout_633ca24804e45",
+                    "name": "subtitle",
+                    "label": "Subtitle",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_633ca24804e46",
+                            "label": "Subtitle",
+                            "name": "training_subtitle",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": "",
+                            "maxlength": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_633ca18855008": {
+                    "key": "layout_633ca18855008",
+                    "name": "editor",
+                    "label": "Editor",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_633ca199e34be",
+                            "label": "Editor",
+                            "name": "training_editior",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_633ca24704e41": {
+                    "key": "layout_633ca24704e41",
+                    "name": "video",
+                    "label": "Video",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_633ca24704e43",
+                            "label": "Editor",
+                            "name": "training_editior",
+                            "type": "wysiwyg",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "tabs": "all",
+                            "toolbar": "full",
+                            "media_upload": 1,
+                            "delay": 0
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "button_label": "Add Content",
+            "min": "",
+            "max": ""
         }
     ],
     "location": [
@@ -54,5 +141,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1664246998
+    "modified": 1664918229
 }
