@@ -10,7 +10,7 @@
                     <?php elseif ( get_row_layout() == 'editor' ) : ?>
                         <p><?php the_sub_field( 'training_editior' ); ?></p>
                     <?php elseif ( get_row_layout() == 'video' ) : ?>
-                        <?php the_sub_field( 'training_editior' ); ?>
+                        <?php the_sub_field( 'training_video' ); ?>
                     <?php endif; ?>
                 <?php endwhile; ?>
             <?php else: ?>
