@@ -66,54 +66,38 @@
 
 <div class="section-content">
     <div class="list">
-        
-        
-        
-<?php
-    $custom_terms = get_terms('training-type');
 
-foreach($custom_terms as $custom_term) {
-    wp_reset_query();
-    $args = array('post_type' => 'training',
-        'tax_query' => array(
-            array(
-                'taxonomy' => 'training-type',
-                'field' => 'slug',
-                'terms' => $custom_term->slug,
-            ),
-        ),
-     );
-
-     $loop = new WP_Query($args);
-     if($loop->have_posts()) { ?>
+<?php 
+  $args = array(  
+        'post_type' => 'training',
+        'post_status' => 'publish',
+    );
+        $loop = new WP_Query( $args ); 
         
+    while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
         <div class="list-item" data-category="transition">
             
+            
             <div class="accordion-title">
+
                 <div style="display: flex;">
-                    <p class="hb-cat"><?php echo $custom_term->name; ?></p>
-                    <p class="handbook-subtitle hb-sbt"><?php echo $custom_term->name; ?> Topic List</p>
+                    <?php $terms = wp_get_post_terms(get_the_id(), 'training-type'); foreach ($terms as $term) if( has_term('', 'training-type' ) ): ?><p class="hb-cat"><?php { echo $term->name.' ';} ?></p><?php  endif; ?>
+                    <p class="handbook-subtitle hb-sbt"><?php the_title(); ?></p>
+                
                 </div>
                 <div class="handbook-subtitle open-caret">⌄</div>
                 <div class="handbook-subtitle close-caret">⌃</div>
+
             </div>
-            
             <hr class="list-hr">
+            
+            
+            
+            <div class="accordion-content"><p><?php the_field( 'section_content' ); ?></p></div>
+        </div>
 
-            <?php while($loop->have_posts()) : $loop->the_post(); ?>
-
-            <div class="accordion-content"><p>
-                <a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a>
-            </p></div>    
-
-            <?php endwhile; ?>
-                              
-        </div>      
-        
-    <?php }
-} ?>  
-
-
+        <?php endwhile; wp_reset_postdata();  ?>
 
     </div>
 </div>
