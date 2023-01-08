@@ -909,7 +909,7 @@ a.btn {
     font-weight: 800;
     color: #4D4D4D;
     background: #ece7e1;
-    padding: 5px 15px;
+    padding: 15px 15px;
 }
 
 @media only screen and (max-width: 700px) {
@@ -948,6 +948,7 @@ a.btn {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    flex-wrap: wrap;
     max-width: 1680px;
     margin: 0 auto;
     padding: 10px 16px;
@@ -993,6 +994,7 @@ a.hdsocial {
 .site-menu {
     display: flex;
     justify-content: flex-end;
+    padding-top: 10px;
     font-size: 16px;
 }
 
@@ -1106,6 +1108,12 @@ a.hdsocial {
 .post-navigation .nav-next {
     text-align: end;
     flex: 1 0 50%;
+}
+
+@media (max-width: 800px) {
+    .main-navigation ul {
+    display: block;
+}
 }
 
 
