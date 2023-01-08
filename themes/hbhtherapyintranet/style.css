@@ -467,7 +467,6 @@ h1 {
     font-weight: 900;
     font-style: normal;
     font-size: 2em;
-    line-height: 1.5em;
     margin: 0.67em 0;
 }
 
@@ -844,7 +843,6 @@ a.btn {
     text-decoration: none;
     font-weight: 600;
     font-style: normal;
-    font-size: 22px;
     line-height: 1;
 }
 
@@ -987,7 +985,7 @@ a.hdsocial {
 
 .site-branding {
     display: flex;
-    align-items: baseline;
+    align-items: end;
     height: 5.5rem; 
     color: #008587; 
 }
@@ -1009,10 +1007,6 @@ a.hdsocial {
 }
 
 @media only screen and (max-width: 800px) {
-
-    .nav-container {
-        height: 3.5rem;
-    }
 
     .nav-container a.phone {
         margin: 0px 50px;
@@ -1686,10 +1680,21 @@ a.user-email:hover {
 
 .hr-sidebar .btn {
     width: 100%;
-    height: 65px;
-    line-height: 1.5;
+    height: auto;
     margin-bottom: 10px;
 }
+
+.hr-sidebar .logo-btn {
+    height: 65px;
+}
+
+.logo-btn img {
+    height: auto; 
+    width: auto; 
+    max-height: 100%; 
+    max-width: 100%;
+}
+
 /*--------------------
 Clinicians Page
 ----------------------------- */

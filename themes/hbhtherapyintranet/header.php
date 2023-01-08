@@ -72,7 +72,7 @@
    
                     <div class="site-branding">
                         <a href="/"><img src="<?php the_field( 'header_desktop_logo', 'option' ); ?>"  alt="HBH Logo"></a>
-                        <h1 style="padding-left: 5px;"><?php echo get_bloginfo( 'name' ); ?></h1>
+                        <h1 style="padding-left: 5px; margin: 0;"><?php echo get_bloginfo( 'name' ); ?></h1>
                     </div><!-- .site-branding -->
 
 

@@ -40,7 +40,9 @@
 		<?php elseif ( get_row_layout() == 'pdf_button' ) : ?>
 			<?php if ( have_rows( 'pdf_link' ) ) : ?>
 				<?php while ( have_rows( 'pdf_link' ) ) : the_row(); ?>
-                    <a class="hr-btn btn" href="<?php the_sub_field( 'pdf_link' ); ?>" target="_blank"><?php the_sub_field( 'pdf_label' ); ?></a>
+                    <a class="hr-btn btn" href="<?php the_sub_field( 'pdf_link' ); ?>" target="_blank">
+                        <?php the_sub_field( 'pdf_label' ); ?>
+                    </a>
 				<?php endwhile; ?>
 			<?php endif; ?>
 
@@ -55,7 +57,7 @@
 			<?php if ( have_rows( 'logo_link' ) ) : ?>
 				<?php while ( have_rows( 'logo_link' ) ) : the_row(); ?>
 					<?php if ( get_sub_field( 'logo' ) ) : ?>
-                    <a class="hr-btn btn" href="<?php the_sub_field( 'logo_link' ); ?>"><img src="<?php the_sub_field( 'logo' ); ?>" /></a>
+                    <a class="hr-btn btn" style="height: 65px;" href="<?php the_sub_field( 'logo_link' ); ?>"><img src="<?php the_sub_field( 'logo' ); ?>" /></a>
 					<?php endif ?>
 				<?php endwhile; ?>
 			<?php endif; ?>
