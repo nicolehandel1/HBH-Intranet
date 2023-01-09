@@ -1152,13 +1152,9 @@ a.hdsocial {
         align-items: flex-end;
         padding: 50px 0 20px 0;
     }
-
-    .footer-content {
-        width: 50%;
-    }
     
     .ftlocations {
-        columns: 2 auto;
+        width: 75%;
     }
     
     .ft-location {
@@ -1178,6 +1174,7 @@ a.hdsocial {
         flex-wrap: wrap;
         align-items: flex-end;
         padding-left: 50px;
+        width: 25%;
     }
     
     .ft-info {

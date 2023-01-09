@@ -90,7 +90,7 @@ foreach($custom_terms as $custom_term) {
         <div class="list-item" data-category="transition">
             
             <div class="accordion-title">
-                <div style="display: flex;">
+                <div style="display: flex; flex-wrap: wrap;">
                     <p class="hb-cat"><?php echo $custom_term->name; ?></p>
                     <p class="handbook-subtitle hb-sbt"><?php echo $custom_term->name; ?> Topic List</p>
                 </div>
