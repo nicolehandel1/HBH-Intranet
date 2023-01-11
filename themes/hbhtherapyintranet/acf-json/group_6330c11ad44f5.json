@@ -26,7 +26,7 @@
             "label": "Phone Number",
             "name": "phone_number",
             "type": "text",
-            "instructions": "",
+            "instructions": "For employee use only",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -118,5 +118,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1673471005
+    "modified": 1673471462
 }
