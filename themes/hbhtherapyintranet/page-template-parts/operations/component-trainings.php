@@ -100,13 +100,13 @@ foreach($custom_terms as $custom_term) {
             
             <hr class="list-hr">
 
-            <?php while($loop->have_posts()) : $loop->the_post(); ?>
+            <div class="accordion-content">
+                <ol><?php while($loop->have_posts()) : $loop->the_post(); ?>
 
-            <div class="accordion-content"><p>
-                <a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a>
-            </p></div>    
+                <li><a href="<?php echo get_permalink(); ?>"><?php echo get_the_title(); ?></a></li>
 
-            <?php endwhile; ?>
+            <?php endwhile; ?></ol>
+            </div> 
                               
         </div>      
         

@@ -66,8 +66,10 @@
             </div>
             <hr class="list-hr">
             
-            <div class="accordion-content"><p><?php the_field( 'section_content' ); ?></p></div>
-            
+            <div class="accordion-content">
+                <a href="<?php echo get_permalink(); ?>" target="_blank">Open this section in a new page →</a>
+                <p><?php the_field( 'section_content' ); ?></p>
+            </div>
 
         </div>
 

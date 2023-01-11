@@ -112,9 +112,7 @@
         <div class="list-item" data-category="transition">
             
             <div class="accordion-title">
-                    
-                    
-                
+
                 <div style="display: flex;">
                     <?php $terms = wp_get_post_terms(get_the_id(), 'resource-category'); foreach ($terms as $term) if( has_term('', 'resource-category' ) ): ?><p class="hb-cat"><?php { echo $term->name.' ';} ?></p><?php  endif; ?>
                     <p class="handbook-subtitle hb-sbt"><?php the_title(); ?></p>
@@ -125,7 +123,10 @@
             </div>
             <hr class="list-hr">
             
-            <div class="accordion-content"><p><?php the_field( 'section_content' ); ?></p></div>
+            <div class="accordion-content">
+                <a href="<?php echo get_permalink(); ?>" target="_blank">Open this section in a new page →</a>
+                <p><?php the_field( 'section_content' ); ?></p>
+            </div>
             
 
         </div>

@@ -1,7 +1,7 @@
 <div class="section blg-info-section">
     <div class="section-content">
 
-        <a class="archive-link" href="/hr/">HBH Handbook</a>
+        <a class="archive-link" href="/resources/">Clinical Resources</a>
 
         <h1 class="blog-title"><?php the_title(); ?></h1>
 
@@ -20,7 +20,7 @@
 
             <?php 
                 $args = array(  
-                        'post_type' => 'handbook',
+                        'post_type' => 'clinical',
                         'post_status' => 'publish',
                     );
                         $loop = new WP_Query( $args ); ?>
