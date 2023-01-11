@@ -10,6 +10,7 @@
 
         <div class="single-content">
             <p><?php the_field( 'section_content' ); ?></p>
+            <iframe src="<?php the_field( 'google_doc_link' ); ?>?embedded=true" width="1500" height="1500"></iframe>
 
         </div>
 

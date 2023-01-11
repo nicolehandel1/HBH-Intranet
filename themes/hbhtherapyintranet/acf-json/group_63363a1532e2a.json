@@ -3,6 +3,25 @@
     "title": "Resources",
     "fields": [
         {
+            "key": "field_63bf1f76df9c7",
+            "label": "Google Doc Link",
+            "name": "google_doc_link",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_63363a153628c",
             "label": "Section Content",
             "name": "section_content",
@@ -54,5 +73,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1664498215
+    "modified": 1673469834
 }
