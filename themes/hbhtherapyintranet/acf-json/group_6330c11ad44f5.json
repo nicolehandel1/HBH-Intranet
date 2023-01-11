@@ -3,10 +3,10 @@
     "title": "User",
     "fields": [
         {
-            "key": "field_6330c4a4b57b5",
-            "label": "Role",
-            "name": "profile-role",
-            "type": "checkbox",
+            "key": "field_6330c1282957e",
+            "label": "Job Title",
+            "name": "job_title",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,29 +15,16 @@
                 "class": "",
                 "id": ""
             },
-            "choices": {
-                "Director": "Director",
-                "Manager": "Manager",
-                "Supervisor": "Supervisor",
-                "Clinical": "Clinical",
-                "Med Management": "Med Management",
-                "Human Resources": "Human Resources",
-                "Client Care": "Client Care",
-                "Facilities": "Facilities",
-                "Operations": "Operations",
-                "Marketing": "Marketing"
-            },
-            "allow_custom": 0,
-            "default_value": [],
-            "layout": "vertical",
-            "toggle": 0,
-            "return_format": "label",
-            "save_custom": 0
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         },
         {
-            "key": "field_6330c1282957e",
-            "label": "Job Title",
-            "name": "job_title",
+            "key": "field_63bf21e2bca41",
+            "label": "Phone Number",
+            "name": "phone_number",
             "type": "text",
             "instructions": "",
             "required": 0,
@@ -111,25 +98,6 @@
             "toolbar": "full",
             "media_upload": 1,
             "delay": 0
-        },
-        {
-            "key": "field_63bf21e2bca41",
-            "label": "Phone Number",
-            "name": "phone_number",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
         }
     ],
     "location": [
@@ -150,5 +118,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1673470442
+    "modified": 1673471005
 }
