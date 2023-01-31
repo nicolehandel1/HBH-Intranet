@@ -54,7 +54,6 @@
                 <div class="main-site-branding">
                     <a class="subhead-logo" href="https://hbhtherapy.com/"><img src="<?php the_field( 'subhead-logo', 'option' ); ?>" alt="HBH Logo"></a>
                     <div class="hd-social">
-                        test
                         <a href="<?php the_field( 'facebook_link', 'option' ); ?>" target="_blank" class="hdsocial"><i class="fab fa-facebook-f" alt="Facebook share link"></i></a>
                         <a href="<?php the_field( 'instagram_link', 'option' ); ?>" target="_blank" class="hdsocial"><i class="fab fa-instagram" alt="Twitter share link"></i></a>
                         <a href="<?php the_field( 'linkedin_link', 'option' ); ?>" target="_blank" class="hdsocial"><i class="fab fa-linkedin-in" alt="LinkedIn share link"></i></a>
