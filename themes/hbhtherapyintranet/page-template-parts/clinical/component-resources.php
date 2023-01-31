@@ -125,7 +125,9 @@
             
             <div class="accordion-content">
                 <a href="<?php echo get_permalink(); ?>" target="_blank">Open this section in a new page →</a>
-                <iframe src="<?php the_field( 'google_doc_link' ); ?>?embedded=true" width="1500" height="1500"></iframe>
+                <?php if( get_field('google_doc_link') ): ?>
+                    <iframe src="<?php the_field( 'google_doc_link' ); ?>?embedded=true" width="1500" height="1500"></iframe>
+                <?php endif; ?>
                 <p><?php the_field( 'section_content' ); ?></p>
             </div>
             
