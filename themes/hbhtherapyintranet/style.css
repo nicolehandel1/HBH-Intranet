@@ -118,6 +118,8 @@ hr {
     box-sizing: content-box;
     height: 0;
     overflow: visible;
+    background: linear-gradient(to right, #76559A, #7BBEB6);
+  height: 1px;
 }
 
 /**

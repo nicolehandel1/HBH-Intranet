@@ -20,13 +20,18 @@
     border-radius: 4px;
 }
     
+    .hb-cat:hover {
+    color: #76559A;
+    margin: 0 15px;
+    }  
+    
 </style>
 
 <?php 
 // Updates
 ?>
 
-<p class="clinician-subtitle" style="color: #76559A;">Clinical Updates</p>
+<p class="clinician-subtitle" style="color: #76559A;">Clinical Updates <a class="hb-cat" href="/news">Staff Meeting Archives →</a></p>
 <hr>
 <div>
     <?php if ( have_rows( 'hr_article' ) ) :  while ( have_rows( 'hr_article' ) ) : the_row(); 
