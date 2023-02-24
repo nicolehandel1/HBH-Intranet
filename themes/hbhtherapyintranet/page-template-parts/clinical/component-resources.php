@@ -23,6 +23,10 @@
     .hb-cat:hover {
     color: #76559A;
     margin: 0 15px;
+        box-shadow: -1px 2px 5px -2px #008587;
+    -webkit-box-shadow: -1px 2px 5px -2px #008587;
+    -moz-box-shadow: -1px 2px 5px -2px #008587;
+        transition: ease .5s;
     }  
     
 </style>

@@ -2803,3 +2803,27 @@ h2.office-subtitle {
         padding: 30px 0px 0px 0px;
     }     
 }
+/*----------------- departments --------------------*/
+.hb-cat {
+    display: inline;
+    max-height: 30px;
+    background: #fff;
+    color: #76559A;
+    border: solid 1px #76559A;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 4px 7px 2px 7px;
+    margin: 0 10px;
+    border-radius: 4px;
+}
+    
+    .hb-cat:hover {
+    color: #76559A;
+    margin: 0 15px;
+        box-shadow: -1px 2px 5px -2px #008587;
+    -webkit-box-shadow: -1px 2px 5px -2px #008587;
+    -moz-box-shadow: -1px 2px 5px -2px #008587;
+        transition: ease .5s;
+    }  
+    
