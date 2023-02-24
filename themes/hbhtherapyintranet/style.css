@@ -909,8 +909,9 @@ a.btn {
 
 .page-title {
     font-weight: 800;
-    color: #4D4D4D;
-    background: #ece7e1;
+    color: #085962;
+    background: rgb(123,190,182);
+    background: linear-gradient(90deg, rgba(123,190,182,1) 0%, rgba(250,248,244,1) 35%, rgba(255,255,255,1) 100%);
     padding: 15px 15px;
 }
 
@@ -2803,7 +2804,7 @@ h2.office-subtitle {
         padding: 30px 0px 0px 0px;
     }     
 }
-/*----------------- departments --------------------*/
+/*----------------- Careers --------------------*/
 .hb-cat {
     display: inline;
     max-height: 30px;
