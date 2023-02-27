@@ -8,7 +8,7 @@
     }
 .hb-cat {
     display: inline;
-    max-height: 30px;
+    max-height: 50px;
     background: #fff;
     color: #76559A;
     border: solid 1px #76559A;
