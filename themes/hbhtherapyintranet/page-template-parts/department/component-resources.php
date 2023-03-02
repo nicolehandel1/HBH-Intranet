@@ -42,7 +42,7 @@
         <a class="user-email" href=""><?php echo $employee->user_email; ?></a>
         
         <?php if ( have_rows( 'office_hours', $employee ) ) : ?>
-                <p class="clinician-subtitle">Office Hours</p>
+                <p class="clinician-subtitle offhours">Office Hours</p>
                 <hr>
                 <?php while ( have_rows( 'office_hours', $employee ) ) : the_row(); ?>
 

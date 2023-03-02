@@ -2827,4 +2827,9 @@ h2.office-subtitle {
     -moz-box-shadow: -1px 2px 5px -2px #008587;
         transition: ease .5s;
     }  
+
+.offhours {
+    margin-top: 0px;
+    color: #7BBEB6;
+}
     

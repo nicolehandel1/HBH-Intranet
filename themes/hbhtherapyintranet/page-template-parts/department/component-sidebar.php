@@ -16,18 +16,6 @@
     <p class="job-title"><?php the_field( 'job_title', $author); ?></p>
     <a class="user-email" href="" ><?php echo $author->user_email; ?></a>
 
-    <?php if ( have_rows( 'office_hours', $author ) ) : ?>
-                    <p class="clinician-subtitle">Office Hours</p>
-                    <hr>
-                    <?php while ( have_rows( 'office_hours', $author ) ) : the_row(); ?>
-
-                    <p><strong><?php the_sub_field( 'location' ); ?></strong><br>
-                    <?php the_sub_field( 'hours' ); ?></p>
-
-                    <?php endwhile; ?>
-                <?php else : ?>
-                    <?php // No rows found ?>
-                <?php endif; ?>
 <?php endif; ?>
 
 <?php 
