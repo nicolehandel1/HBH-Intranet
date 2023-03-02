@@ -2829,7 +2829,15 @@ h2.office-subtitle {
     }  
 
 .offhours {
-    margin-top: 0px;
+    margin-top: 15px;
     color: #7BBEB6;
+}
+
+p.user-email {
+    font-size: 16px;
+}
+
+hr.user-email {
+    margin-bottom: .5em;
 }
     

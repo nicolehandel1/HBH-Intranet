@@ -43,10 +43,10 @@
         
         <?php if ( have_rows( 'office_hours', $employee ) ) : ?>
                 <p class="clinician-subtitle offhours">Office Hours</p>
-                <hr>
+                <hr class="user-email">
                 <?php while ( have_rows( 'office_hours', $employee ) ) : the_row(); ?>
 
-                <p><strong><?php the_sub_field( 'location' ); ?></strong><br>
+                <p class="user-email"><strong><?php the_sub_field( 'location' ); ?></strong><br>
                 <?php the_sub_field( 'hours' ); ?></p>
 
                 <?php endwhile; ?>
