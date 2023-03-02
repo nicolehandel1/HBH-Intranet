@@ -57,7 +57,7 @@
 			<?php if ( have_rows( 'logo_link' ) ) : ?>
 				<?php while ( have_rows( 'logo_link' ) ) : the_row(); ?>
 					<?php if ( get_sub_field( 'logo' ) ) : ?>
-                    <a class="hr-btn btn logo-btn" href="<?php the_sub_field( 'ext_link' ); ?>" arget="_blank"><img src="<?php the_sub_field( 'logo' ); ?>" /></a>
+                    <a class="hr-btn btn logo-btn" href="<?php the_sub_field( 'ext_link' ); ?>" target="_blank"><img src="<?php the_sub_field( 'logo' ); ?>" /></a>
 					<?php endif ?>
 				<?php endwhile; ?>
 			<?php endif; ?>
